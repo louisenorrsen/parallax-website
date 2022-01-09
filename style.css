@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#img1 {
+    background-image: url(./visual-stories-micheile-fEykiYD9Vk0-unsplash.jpg);
+    min-height: 100vh;
+}
+
+#img2 {
+    background-image: url(./robert-eklund-tjGsQsR0ruY-unsplash.jpg);
+    min-height: 500px;
+}
+
+#img3 {
+    background-image: url(./enza-brunero-RcHzLhN66Oo-unsplash.jpg);
+    min-height: 500px;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content {
+    min-height: 500px;
+    font-size: 2rem;
+}
+
+a {
+    font-size: 2rem;
+    color: salmon;
+}
