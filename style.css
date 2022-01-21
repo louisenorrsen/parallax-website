@@ -123,16 +123,26 @@ a {
     line-height: 1.6;
 }
 
-.card-title {
-
-}
-
 .card {
-    color: var(--clr-neutral-900);
+    color: var(--clr-neutral-100);
     background-image: url(./visual-stories-micheile-fEykiYD9Vk0-unsplash.jpg);
     background-size: cover;
     padding: 10rem 0 0;
+    max-width: 35ch;
 }
 
+.card-content {
+    padding: 1.5em;
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(0 0% 0% / 0.4) 20%,
+        hsl(0 0% 0% / 1)
+    );
+}
+
+.card-title::after {
+    content: '';
+    
+}
 
  
