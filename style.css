@@ -69,7 +69,7 @@
     width: 100%;
 }
 
-a {
+.photograph a {
     font-size: 1.5rem;
     color: hsl(6, 93%, 81%);
 }
@@ -121,6 +121,7 @@ a {
     display: grid;
     place-items: center;
     line-height: 1.6;
+    padding: 3rem;
 }
 
 .card {
@@ -128,21 +129,59 @@ a {
     background-image: url(./visual-stories-micheile-fEykiYD9Vk0-unsplash.jpg);
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 35ch;
+    max-width: 30ch;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    margin: .7em 0;
 }
 
 .card-content {
-    padding: 1.5em;
+    --padding: 1.5rem;
+    padding: var(--padding);
     background: linear-gradient(
         hsl(0 0% 0% / 0),
-        hsl(0 0% 0% / 0.4) 20%,
+        hsl(0 0% 0% / 0.5) 15%,
         hsl(0 0% 0% / 1)
     );
 }
 
+.card-title {
+    position: relative;
+    width: max-content;
+    font-size: 1.2rem;
+}
+
 .card-title::after {
     content: '';
-    
+    position: absolute;
+    left: calc(var(--padding) * -1);
+    bottom: 0;
+    height: 4px;
+    background-color: var(--clr-accent-400);
+    width: calc(100% + var(--padding));
+}
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-accent-400);
+    padding: 0.5em 1.25em;
+    border-radius: .25em;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--clr-neutral-100);
 }
 
  
